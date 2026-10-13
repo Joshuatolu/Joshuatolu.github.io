@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SapaProof Privacy Policy</title>
+<meta name="description" content="How the SapaProof app handles your data. It has no internet permission.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="icon" href="../../assets/img/sapaproof-icon.png">
+</head>
+<body>
+<div class="wrap">
+  <header class="policy-head">
+    <a href="../../">← Joshua Toluse Onibiyo</a>
+    <div class="card-head">
+      <img src="../../assets/img/sapaproof-icon.png" alt="SapaProof app icon" width="60" height="60">
+      <h1>SapaProof privacy policy</h1>
+    </div>
+  </header>
+  <section class="policy">
+    <div class="col">
+      <p class="updated">Effective 27 September 2026</p>
+      <p><strong>The short version:</strong> SapaProof has no internet permission. It cannot send your information anywhere, and we, the people who make it, never receive any of it. Everything stays on your phone, encrypted.</p>
+      <h2>What SapaProof reads, and why</h2>
+      <ul>
+        <li><strong>Notifications (only if you turn on notification access).</strong> SapaProof checks the text of new notifications to find bank and wallet alerts. It saves the transaction from an alert (amount, account ending, date, balance, description). Every other notification, including chats, is ignored the moment it arrives and is not stored. One-time passcodes (OTPs) are never stored.</li>
+        <li><strong>SMS (only in the version with SMS access, and only if you allow it).</strong> SapaProof reads bank SMS in the same way: once for the last 90 days when you set it up, then as new ones arrive. Personal messages and OTPs are not stored.</li>
+        <li><strong>Files you choose.</strong> Bank statements you import, and SapaProof backup files you choose to restore.</li>
+        <li><strong>What you type:</strong> your name, payday, the accounts you add, cash entries, goals, budgets and loans.</li>
+      </ul>
+      <h2>What is stored, and where</h2>
+      <p>Only on your phone, in a database encrypted with SQLCipher. The key is protected by your phone's Android Keystore. SapaProof turns off Android's automatic cloud backup, so none of this goes to Google Drive or anywhere else. SapaProof also keeps up to 30 bank alerts it couldn't read, with every digit replaced by "#", so you can choose to share the format (see below).</p>
+      <h2>Sharing</h2>
+      <p>SapaProof never shares anything by itself. It can't: it has no internet. Things only leave the phone when <strong>you</strong> choose to send them, through Android's share sheet or file picker:</p>
+      <ul>
+        <li><strong>A problem report</strong> (if SapaProof hit an error): which part of the app failed. It contains no message text, names or amounts.</li>
+        <li><strong>An alert it couldn't read:</strong> numbers are already hidden, and you see and can edit the text before sharing.</li>
+        <li><strong>A backup file:</strong> encrypted with a password you choose. Without the password, nobody can open it, and we can't recover it.</li>
+      </ul>
+      <h2>Permissions</h2>
+      <div class="table-wrap">
+        <table>
+          <tr><th>Permission</th><th>Why</th></tr>
+          <tr><td>Notification access</td><td>To read bank and wallet alerts as they arrive</td></tr>
+          <tr><td>SMS (SMS version only)</td><td>To read bank SMS</td></tr>
+          <tr><td>Notifications</td><td>To remind you about loan payments and budgets. Amounts are hidden on the lock screen</td></tr>
+          <tr><td>Biometric</td><td>To lock the app with your fingerprint, face or phone PIN</td></tr>
+          <tr><td>Run at startup, keep awake</td><td>To keep the once-a-day reminder check scheduled after the phone restarts</td></tr>
+        </table>
+      </div>
+      <p>SapaProof does not request internet or network access.</p>
+      <h2>Your control</h2>
+      <ul>
+        <li>Turn off notification access, SMS access or reminders at any time in SapaProof's More screen or in Android settings.</li>
+        <li>Delete cash entries you typed from the transaction itself.</li>
+        <li>Uninstalling SapaProof deletes all its data from your phone. Backup files you saved elsewhere are yours to keep or delete.</li>
+      </ul>
+      <h2>Children</h2>
+      <p>SapaProof is meant for adults (18+) managing their own money.</p>
+      <h2>Changes</h2>
+      <p>If this policy changes, the new version will be in the app's store listing with a new date. Because SapaProof has no internet, it can never start sending data without an update that you install and that this policy would have to describe.</p>
+      <h2>Contact</h2>
+      <p>toluseonibiyo@gmail.com</p>
+    </div>
+  </section>
+  <footer>© 2026 Joshua Toluse Onibiyo · <a href="../../">Portfolio</a></footer>
+</div>
+</body>
+</html>
